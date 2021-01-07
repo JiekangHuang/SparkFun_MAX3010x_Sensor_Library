@@ -289,8 +289,6 @@ void MAX30105::setProximityThreshold(uint8_t threshMSB) {
 //Assigning a SLOT_RED_PILOT will ??
 void MAX30105::enableSlot(uint8_t slotNumber, uint8_t device) {
 
-  uint8_t originalContents;
-
   switch (slotNumber) {
     case (1):
       bitMask(MAX30105_MULTILEDCONFIG1, MAX30105_SLOT1_MASK, device);

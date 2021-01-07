@@ -36,8 +36,7 @@
   //SAMD21 uses RingBuffer.h
   #define I2C_BUFFER_LENGTH SERIAL_BUFFER_SIZE
 
-#else
-
+#elif !defined(I2C_BUFFER_LENGTH)
   //The catch-all default is 32
   #define I2C_BUFFER_LENGTH 32
 
